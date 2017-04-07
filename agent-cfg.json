@@ -1,0 +1,40 @@
+{
+    "debug": true,
+    "hostname": "",
+    "ip": "",
+    "plugin": {
+        "enabled": true,
+        "autoSync": true,
+        "git": "",
+        "checkoutPath": "/opt/soft/satori-rules",
+        "subDir": "plugin",
+        "logs": "/var/log/satori"
+    },
+    "master": {
+        "enabled": true,
+        "addr": "192.168.49.210:6040",
+        "interval": 60,
+        "timeout": 1000
+    },
+    "transfer": {
+        "enabled": true,
+        "addrs": [
+            "192.168.49.210:8433"
+        ],
+        "interval": 60,
+        "timeout": 1000
+    },
+    "http": {
+        "enabled": true,
+        "listen": ":1988"
+    },
+    "collector": {
+        "ifacePrefix": ["eth", "em"]
+    },
+    "addTags":{
+      "region": "default"
+    },
+    "ignore": [
+        ["^df\\.", "mount", ".*/(docker|ureadahead|netns)/.*$"]
+    ]
+}
