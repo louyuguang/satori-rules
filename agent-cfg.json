@@ -5,7 +5,7 @@
     "plugin": {
         "enabled": true,
         "autoSync": true,
-        "git": "",
+        "git": "https://github.com/louyuguang/satori-rules.git",
         "checkoutPath": "/opt/soft/satori-rules",
         "subDir": "plugin",
         "logs": "/var/log/satori"
